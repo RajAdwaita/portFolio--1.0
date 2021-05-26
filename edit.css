@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #87ff2a;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #87ff2a;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+
+.col {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.btn {
+    display: inline-block;
+    background: #87ff2a;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+.logo i {
+    margin-right: 1.5rem;
+}
+
+.navbar .menu li {
+    /* text-decoration: none; */
+    list-style: none;
+    display: inline-block;
+}
+
+.toggler {
+    background: none;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    cursor: progress;
+    z-index: 5;
+    /* display: none; */
+    /* border-radius: 25px; */
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #87ff2a;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.navbar .menu li a:hover {
+    opacity: 0.6;
+}
+
+.toggler i {
+    line-height: 30px;
+    border: 2px solid #87ff2a;
+    display: block;
+    color: #87ff2a;
+}
+
+.home {
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHZlbmRldHRhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60) no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.home .container {
+    width: 100vw;
+    color: #87ff2a;
+}
+
+.home .container .row {
+    margin-right: 0;
+}
+
+.home .home-content .text-1 {
+    font-size: 1.2rem;
+}
+
+.home .home-content .text-2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home .home-content .text-3 {
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+@media only screen and (max-width: 890px) {
+    .toggler {
+        display: block;
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: #87ff2a;
+        top: 0;
+        max-width: 300px;
+        padding: 80px 50px;
+        transition: 0.3s linear;
+        right: -100%;
+    }
+    .navbar .menu li a {
+        color: black;
+        text-align: left;
+        display: block;
+        font-size: 1.5rem;
+        margin: 10px;
+        width: 200px;
+    }
+    .toggler.active i {
+        color: black;
+        border-color: black;
+    }
+    .navbar .active {
+        right: 0;
+    }
+}
