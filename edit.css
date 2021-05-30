@@ -43,15 +43,16 @@ a {
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid #fff;
 }
 
 .btn:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    background-color: rebeccapurple;
 }
 
 .navbar {
-    position: relative;
+    position: fixed;
     width: 100%;
     padding: 40px 0;
     top: 0;
@@ -81,7 +82,7 @@ a {
     height: 30px;
     cursor: progress;
     z-index: 5;
-    /* display: none; */
+    display: none;
     /* border-radius: 25px; */
 }
 
@@ -103,6 +104,21 @@ a {
     border: 2px solid #87ff2a;
     display: block;
     color: #87ff2a;
+}
+
+.sticky {
+    background-color: #fff;
+    padding: 18px 0;
+    transition: 1s;
+}
+
+.sticky .navbar-menu a {
+    color: #87ff2a;
+}
+
+.sticky .toggler i {
+    background-color: #87ff2a;
+    color: #fff;
 }
 
 .home {
@@ -132,6 +148,16 @@ a {
 .home .home-content .text-3 {
     font-size: 1.4rem;
     font-weight: 450;
+}
+
+.home .home-content .text-3 span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.home .home-content .btn {
+    font-size: 25px;
+    transition: all 0.3s ease;
 }
 
 @media only screen and (max-width: 890px) {
