@@ -20,6 +20,9 @@ body {
 /* html {
 } */
 
+::-webkit-scrollbar {
+  display: none;
+}
 a {
   text-decoration: none;
   color: #87ff2a;
@@ -218,6 +221,10 @@ a {
   color: #fff;
   font-weight: 600;
 }
+.a1 {
+  color: #080a07;
+  text-decoration: none;
+}
 
 .home .home-content .btn {
   font-size: 25px;
@@ -237,6 +244,7 @@ a {
 .about-content img {
   margin-right: 60px;
   border-radius: 20px;
+  width: 25vw;
 }
 
 .about-text {
