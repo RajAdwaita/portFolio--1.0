@@ -10,6 +10,9 @@ body {
   color: #87ff2a;
   background-color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   text-decoration: none;
@@ -173,7 +176,7 @@ a {
 
 .home {
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHZlbmRldHRhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60)
+  background: url(https://static.videezy.com/system/resources/previews/000/007/313/original/Plexus.mp4)
     no-repeat center center/cover;
   background-attachment: fixed;
 }
@@ -189,16 +192,19 @@ a {
 
 .home .home-content .text-1 {
   font-size: 1.2rem;
+  margin-top: 20px;
 }
 
 .home .home-content .text-2 {
   font-size: 2rem;
   font-weight: 600;
+  margin-top: 20px;
 }
 
 .home .home-content .text-3 {
   font-size: 1.4rem;
   font-weight: 450;
+  margin-top: 20px;
 }
 
 .home .home-content .text-3 span {
@@ -209,6 +215,7 @@ a {
 .home .home-content .btn {
   font-size: 25px;
   transition: all 0.3s ease;
+  margin-top: 20px;
 }
 
 #about {
@@ -346,6 +353,7 @@ a {
   max-width: 420px;
   color: #87ff2a;
   height: 450px;
+  cursor: pointer;
 }
 
 .item .member-image img {
@@ -371,10 +379,140 @@ a {
 }
 
 .item .job {
-  color: #080a07;
+  color: #4ec5e9;
   font-size: 15px;
   text-transform: uppercase;
   margin: 15px 0;
+  font-weight: 800;
+  /* cursor: pointer; */
+}
+.item:hover,
+.item .job:hover {
+  background-color: #1f2b19;
+  color: #87ff2a;
+  text-emphasis-color: #87ff2a;
+}
+
+#contact {
+  padding: 100px 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.contact-info .contact-item {
+  width: calc(32% - 10px);
+  height: 170px;
+  background-color: #87ff2a;
+  color: #080a07;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s linear;
+}
+
+.contact-info i {
+  display: block;
+  font-size: 40px;
+  line-height: 110px;
+  height: 120px;
+}
+
+.contact-info .contact-item:hover {
+  background-color: #080a07;
+  color: white;
+  transform: scale(1.1);
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  height: 50px;
+  margin: 10px 0;
+  border: 2.5px solid #87ff2a;
+  outline: none;
+  border-radius: 5px;
+  color: rgb(3, 0, 0);
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.name,
+.email {
+  width: calc(50% - 10px);
+}
+.subject {
+  width: 100%;
+}
+.message {
+  min-height: 200px;
+  width: 100%;
+}
+
+.contact-form .btn {
+  width: 100%;
+  color: #87ff2a;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  border: 3px solid #87ff2a;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background-color: #080a07;
+  color: white;
+}
+
+.footer {
+  padding: 80px;
+}
+
+.copyright {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.copyright a {
+  color: #87ff2a;
+  font-weight: 600;
+}
+
+.social a {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.goto {
+  position: fixed;
+  border-radius: 5px;
+  z-index: 99;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #87ff2a;
+  border: none;
+  cursor: pointer;
+}
+@media only screen (max-width: 767px) {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 @media only screen and (max-width: 890px) {
   .toggler {
@@ -430,5 +568,10 @@ a {
   }
   .skills-content .column {
     width: 100%;
+  }
+
+  .contact-info .contact-item {
+    width: 100%;
+    margin-top: 20px;
   }
 }

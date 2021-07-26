@@ -2,8 +2,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {
             $(' .navbar').addClass(' sticky');
+            $('.goto').fadeIn();
         } else {
             $(' .navbar').removeClass(' sticky');
+            $('.goto').fadeOut();
         }
     });
 
@@ -18,6 +20,13 @@ $(document).ready(function () {
         backSpace: 80,
         loop: true,
     });
+
+
+    $('.goto').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+    })
+
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
