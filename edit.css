@@ -5,14 +5,20 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: "Poppins", sans-serif;
   color: #87ff2a;
   background-color: black;
-}
-html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: hidden; */
 }
+/* html {
+} */
 
 a {
   text-decoration: none;
@@ -20,7 +26,7 @@ a {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 0 40px;
   display: flex;
@@ -83,18 +89,19 @@ a {
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 40px 0;
+  padding: 30px 0;
   top: 0;
   z-index: 2;
+  margin-right: -52px;
 }
 
 .logo {
   height: 40px;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .logo i {
-  margin-right: 1.5rem;
+  margin-right: 20px;
 }
 
 .navbar .menu li {
@@ -354,6 +361,7 @@ a {
   color: #87ff2a;
   height: 450px;
   cursor: pointer;
+  transition: 0.2s ease-in;
 }
 
 .item .member-image img {
@@ -388,7 +396,7 @@ a {
 }
 .item:hover,
 .item .job:hover {
-  background-color: #1f2b19;
+  background-color: #dd46b7;
   color: #87ff2a;
   text-emphasis-color: #87ff2a;
 }
