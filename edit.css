@@ -233,6 +233,149 @@ a {
   padding: 100px 0;
 }
 
+.services-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  width: calc(33% - 20px);
+  text-align: center;
+  /* background-color: rgb(190, 51, 233); */
+  background-color: rgb(190, 51, 233);
+  border-radius: 5px;
+  margin: 24px 0;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.service .icon {
+  color: #87ff2a;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.service .h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service:hover {
+  background-color: #87ff2a;
+  color: black;
+}
+.service:hover .icon {
+  color: white;
+}
+
+#skills {
+  padding: 100px 0;
+}
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills-content .column .text {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.skills-content .column {
+  width: calc(50% - 30px);
+  text-align: center;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.progress-bar {
+  height: 5px;
+  margin-top: 15px;
+  background-color: #080a07;
+  position: relative;
+}
+
+.progress-bar:after {
+  content: "";
+  position: absolute;
+  background-color: #87ff2a;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+}
+
+.skills-content .column p {
+  margin-bottom: 15px;
+}
+.html:after {
+  width: 75%;
+}
+.css:after {
+  width: 70%;
+}
+.js:after {
+  width: 60%;
+}
+.jsx:after {
+  width: 35%;
+}
+.wpress:after {
+  width: 15%;
+}
+.java:after {
+  width: 80%;
+}
+.cpp:after {
+  width: 85%;
+}
+
+#team {
+  padding: 100px 0;
+}
+.item {
+  background-color: white;
+  margin: 7px;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 420px;
+  color: #87ff2a;
+  height: 450px;
+}
+
+.item .member-image img {
+  width: 90px;
+  height: 90px;
+  /* border-radius: 15px; */
+  /* height: 100; */
+}
+.item .member-image {
+  width: 100px;
+  height: 100ox;
+  border-radius: 50px;
+  border: 5px solid #87ff2a;
+  overflow: hidden;
+  margin: auto;
+}
+
+.item h2 {
+  color: #87ff2a;
+  font-size: 25px;
+  margin: 40px auto 20px auto;
+  width: 100%;
+}
+
+.item .job {
+  color: #080a07;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
 @media only screen and (max-width: 890px) {
   .toggler {
     display: block;
@@ -270,6 +413,22 @@ a {
   .about-content img {
     margin-bottom: 30px;
     /* align-self: center; */
+    width: 100%;
+  }
+
+  .service {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+  .service {
+    width: 100%;
+  }
+  .skills-content .column {
     width: 100%;
   }
 }

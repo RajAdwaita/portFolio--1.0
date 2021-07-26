@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $(window).scroll(function() {
+$(document).ready(function () {
+    $(window).scroll(function () {
         if (this.scrollY > 20) {
             $(' .navbar').addClass(' sticky');
         } else {
@@ -7,7 +7,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.toggler').click(function() {
+    $('.toggler').click(function () {
         $(this).toggleClass('active');
         $('.menu').toggleClass('active');
     });
@@ -18,4 +18,20 @@ $(document).ready(function() {
         backSpace: 80,
         loop: true,
     });
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
 });
