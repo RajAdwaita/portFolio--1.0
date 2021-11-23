@@ -110,8 +110,22 @@ a {
   font-size: 24px;
 }
 
+.logo:hover {
+  color: #87ff2a;
+}
+
 .logo i {
   margin-right: 20px;
+  /* text-decoration: none; */
+}
+
+.navbar .logo b {
+  margin-left: 20px;
+}
+
+.navbar .logo b:hover {
+  color: #87ff2a;
+  text-decoration: none;
 }
 
 .navbar .menu li {
@@ -143,6 +157,7 @@ a {
 
 .navbar .menu li a:hover {
   opacity: 0.6;
+  text-decoration: none;
 }
 
 .toggler i {
@@ -323,6 +338,15 @@ a {
 
 }
 
+.a1:hover {
+  color: rgb(250, 246, 246);
+  text-decoration: none;
+  filter: brightness(400%);
+  font-size: 1.2rem;
+  font-weight: 800;
+  /* background-color: #a8e023; */
+}
+
 .home .home-content .btn {
   font-size: 25px;
   transition: all 0.3s ease;
@@ -366,7 +390,10 @@ a {
   text-align: center;
   /* background-color: rgb(190, 51, 233); */
   background-color: rgb(190, 51, 233);
+  background: url("https://media.istockphoto.com/vectors/digital-binary-code-on-red-background-with-lines-hacker-attack-vector-id1202116603?k=20&m=1202116603&s=170667a&w=0&h=kZhVcawOch2vJ5pA-Rq8rmbEzwQ6QMNXUdcXKyFCi4M=");
   border-radius: 5px;
+  font-size: large;
+  /* color: #080a07; */
   margin: 24px 0;
   padding: 40px 20px;
   cursor: pointer;
@@ -390,6 +417,8 @@ a {
   color: #b40d23;
   text-decoration: underline;
   text-decoration: none;
+  /* margin-top: 5px; */
+
 
   margin-bottom: 10px;
 }
@@ -406,7 +435,8 @@ a {
 
 .service:hover {
   background-color: #87ff2a;
-  color: black;
+  background: url("https://t4.ftcdn.net/jpg/02/86/02/67/360_F_286026740_xWkobcEk5g38qrH7cpfeImAnlUUSIrc5.jpg");
+  color: white;
 }
 
 .service:hover .icon {
@@ -498,7 +528,7 @@ a {
   border-radius: 20px;
   max-width: 420px;
   color: #87ff2a;
-  height: 450px;
+  height: 250px;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
@@ -521,14 +551,14 @@ a {
 
 .item h2 {
   color: #87ff2a;
-  font-size: 25px;
+  font-size: 27px;
   margin: 40px auto 20px auto;
   width: 100%;
 }
 
 .item .job {
   color: #4ec5e9;
-  font-size: 15px;
+  font-size: 17px;
   text-transform: uppercase;
   margin: 15px 0;
   font-weight: 800;
@@ -540,6 +570,7 @@ a {
   background-color: #dd46b7;
   color: #87ff2a;
   text-emphasis-color: #87ff2a;
+  text-decoration: none;
 }
 
 #contact {
@@ -651,6 +682,11 @@ a {
   display: inline-block;
   justify-content: space-between;
   /* padding: px 0; */
+}
+
+.social a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .goto {
